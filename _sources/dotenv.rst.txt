@@ -1,0 +1,61 @@
+dotenv package
+==============
+
+Submodules
+----------
+
+dotenv.cli module
+-----------------
+
+.. automodule:: dotenv.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dotenv.ipython module
+---------------------
+
+.. automodule:: dotenv.ipython
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dotenv.main module
+------------------
+
+.. automodule:: dotenv.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dotenv.parser module
+--------------------
+
+.. automodule:: dotenv.parser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dotenv.variables module
+-----------------------
+
+.. automodule:: dotenv.variables
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dotenv.version module
+---------------------
+
+.. automodule:: dotenv.version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: dotenv
+   :members:
+   :undoc-members:
+   :show-inheritance:

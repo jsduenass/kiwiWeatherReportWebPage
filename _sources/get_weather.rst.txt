@@ -1,0 +1,7 @@
+get\_weather module
+===================
+
+.. automodule:: get_weather
+   :members:
+   :undoc-members:
+   :show-inheritance:

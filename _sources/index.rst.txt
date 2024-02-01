@@ -1,0 +1,36 @@
+.. Kiwi Weather Reporter documentation master file, created by
+   sphinx-quickstart on Wed Jan 31 22:25:39 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Kiwi Weather Reporter's documentation!
+=================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+This project periodically retrieves weather data, creates a database warehouse in BigQuery and displays the information in a lookerStudio dashboard,  relevant  for kiwibot’s  field operations team to make decisions during the  robots'operation.
+
+.. raw:: html
+ 
+   <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/7d4017fd-b124-413f-bbaa-40ff18f89a78/page/p_9nvmw4msdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+Project structure
+--------------------
+
+The project contains the following structure:
+
+- `get_weather.py`: main script that executes the data gathering processing and uploading to BigQuery.
+- `utils_api.py`: helper module that handles the connection to the opeweather API
+- `utils_big_query.py`: helper module that handles the connection to BigQuery
+- `deploy.sh`: bash script that periodicaly runs the get weather script with a defined frequency

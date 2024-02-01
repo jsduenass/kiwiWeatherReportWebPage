@@ -1,18 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Content</title>
-</head>
-<body>
 
-    <!-- Embedding content using an iframe -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Y-w2yU_a7BpP3H7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/7d4017fd-b124-413f-bbaa-40ff18f89a78/page/p_9nvmw4msdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-</body>
+    <title>Welcome to Kiwi Weather Reporter’s documentation! &#8212; Kiwi Weather Reporter 0.0.alpha documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=198291e0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-kiwi-weather-reporter-s-documentation">
+<h1>Welcome to Kiwi Weather Reporter’s documentation!<a class="headerlink" href="#welcome-to-kiwi-weather-reporter-s-documentation" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+<p>This project periodically retrieves weather data, creates a database warehouse in BigQuery and displays the information in a lookerStudio dashboard,  relevant  for kiwibot’s  field operations team to make decisions during the  robots’operation.</p>
+<iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/7d4017fd-b124-413f-bbaa-40ff18f89a78/page/p_9nvmw4msdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe><section id="project-structure">
+<h2>Project structure<a class="headerlink" href="#project-structure" title="Link to this heading">¶</a></h2>
+<p>The project contains the following structure:</p>
+<ul class="simple">
+<li><p><cite>get_weather.py</cite>: main script that executes the data gathering processing and uploading to BigQuery.</p></li>
+<li><p><cite>utils_api.py</cite>: helper module that handles the connection to the opeweather API</p></li>
+<li><p><cite>utils_big_query.py</cite>: helper module that handles the connection to BigQuery</p></li>
+<li><p><cite>deploy.sh</cite>: bash script that periodicaly runs the get weather script with a defined frequency</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Kiwi Weather Reporter</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Sebastian Duenas.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
 </html>
-
-
